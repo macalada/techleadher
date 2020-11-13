@@ -1,0 +1,273 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(35, 194, 173);
+}
+    
+    * {
+      box-sizing: border-box;
+    }
+.p{
+  font-size: larger;
+}
+    /* Style inputs */
+    /* The box */
+.box {
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Navbar */
+/* ul {
+  list-style: none;
+  
+}
+.navbar {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(35, 194, 173);
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #ccc 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+} */
+.hero {
+  display: flex;
+  background: url("./img/background-image.jpg") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+ 
+}
+
+/* Hide the browser's default checkbox */
+.box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.box input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.box input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+/* Style the checkmark/indicator */
+.box .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 5px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+    input[type=email], select, textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+
+    input[type=checkbox], select, textarea {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      margin-top: 3px;
+      margin-bottom: 10px;
+      resize: vertical;
+    }
+    .button {
+      width: 100%;
+      background-color: #eba40c;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .button:hover {
+      width: 100%;
+      background-color: #45a049;
+    }
+    
+    /* Style the box/contact section */
+    .container-contact {
+      border-radius: 5px;
+      background-color: white;
+      padding-top: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
+      margin-top: 100px; 
+      font-size: 10;
+    }
+    
+    /* Create two columns that float next to eachother */
+    
+    .column {
+     
+      float: left;
+      width: 50%;
+      /* margin-top: 10px;
+      padding: 20px;  */
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .btn {
+      border-radius: 20px;
+      outline: none !important;
+    }
+   
+    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column, input[type=submit] {
+        width: 100%;
+        margin-top: 50px;
+      }
+    }
+   
+
+
+
+    @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+
+ 
+    
+    /* Navbar */
+    /* ul {
+      list-style: none;
+    }
+    
+    a {
+      color: #fff;
+      text-decoration: none;
+    } */
+    
+    
+    
+    
+    /* Header */
+    .body-modal-effect {
+      background-color: rgba(0, 0, 0, 0.6);
+
+    }
+    .hero {
+      display: flex;
+      background: url("./img/background-image.jpg") no-repeat center center/cover;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+    
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .hero * {
+      z-index: 10;
+    }
+    /* .container-contact {
+     
+      display: block;
+      width: 800px;
+      height: 800px;
+      background: #fff;
+      opacity: 0.9;
+      border-radius: 10px;
+      /* box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.4); 
+    } */
+     
+      
+      
+      
+      
+      
+      
+      
+      

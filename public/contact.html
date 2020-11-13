@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+
+    <!-- <link rel="stylesheet" href="../assets/css/style_login_form.css" /> -->
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="/css/contactUs.css" type="text/css" rel="stylesheet">
+
+    <title>Contact Us Form</title>
+</head>
+
+<body class="body-modal-effect">
+    <div id="navigator"></div>
+
+    <header class="hero">
+        <div class="container-contact">
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+                <p>We want to hear from you, tell us how can we improve? <br />
+                    In order to help us sort what your massage is about please click the boxes</p>
+            </div>
+            <div class="row">
+                <div class="column ">
+                    <label class="box"> Mentorship
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="box">Events
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="box">Resources
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="box">Volunteer
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                </div>
+                <div class="column ">
+                    </label>
+                    <label class="box">Donation
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="box">Members
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="box">Others
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+
+            </div>
+
+            <form method="POST" class="contact-form">
+                <label for="">Name</label></br>
+                <input id="name" class=name type="text" placeholder="Enter your name..."></br>
+                <label for="">Email address</label></br>
+                <input type="email" id="email" class="email" placeholder="Enter your email...">
+                <label for="">Message</label></br>
+                <textarea type="text" id="massage" class="message" placeholder="Write your massage here..."
+                    style="height:170px"></textarea>
+                <button type="submit" id="" class="button submit rounded">Submit</button>
+            </form>
+    </header>
+    <div id="footer"></div>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
+    <script src="/js/contactUs.js"></script>
+    <script src="/js/import_layout.js"></script>
+</body>
+
+</html>

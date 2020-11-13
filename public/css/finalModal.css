@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+/* Body Styling */
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+/* Header  */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Navbar */
+ul {
+  list-style: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(35, 194, 173);
+  color: #fff;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0px;
+  padding: 0 30px;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #ccc 2px solid;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar .logo {
+  font-weight: 400;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+/* Login Form Styling */
+.login-container {
+  display: flex;
+  width: 850px;
+  height: 450px;
+  margin: auto;
+  background: #fff;
+  border-radius: 15;
+  opacity: 0.9;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.form-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
+
+.form-left h2 {
+  font-size: 14px;
+  font-weight: 100;
+  color: #999;
+  margin: 5px 0;
+}
+.social-btn {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  margin: 10px;
+}
+
+.social-btn a {
+  display: inline-block;
+  margin: auto;
+  width: 85px;
+  font-size: 12px;
+  padding: 10px 15px;
+  border-radius: 25px;
+}
+
+.social-btn .btn:hover {
+  opacity: 0.6;
+}
+.btn-facebook {
+  background: #507cc0;
+}
+.btn-twitter {
+  background: #64ccf1;
+}
+.btn-google {
+  background: #df4930;
+}
+
+.or-seperator {
+  width: 100%;
+  margin: 25px 0 5px;
+  text-align: center;
+  border-top: 1px solid#e0e0e0;
+}
+.or-seperator b {
+  padding: 0 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 40px;
+  background: #fff;
+  display: inline-block;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  position: relative;
+  top: -22px;
+}
+
+.form-group {
+  width: 100%;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 12px;
+  border-radius: 50px;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  padding: 10px;
+  margin: 15px 0;
+}
+.form-control:focus {
+  border-color: #5cb85c;
+}
+
+.btn-large {
+  display: inline-block;
+  cursor: pointer;
+  background: #5cb85c;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px 0;
+  margin: 15px 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.btn-large:hover {
+  opacity: 0.8;
+}
+
+.bottom-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-text a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #333;
+  margin: 0 15px;
+}
+
+.form-right {
+  width: 46%;
+  background: url("img/login-image.jpg") no-repeat center center/cover;
+}
+
+/* Mentorship Page Styling */
+
+.mentorship-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  background: #f4f4f4;
+  margin: auto;
+}
+.heading{
+ 
+  width:70%;
+
+}
+.mentorship-container .heading h3 {
+
+  text-align: center;
+  /* max-width: 80%; */
+  font-size: 2rem;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+/* Card Styling */
+.card-container {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #a0d6b4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  padding: 20px;
+  margin-left: 10px;
+  border-radius: 15px;
+}
+
+.card h2 {
+  font-size: 2rem;
+  padding: 20px;
+  color: rgba(40, 77, 3);
+}
+
+
+
+
+.card p {
+  color: rgb(40, 77, 3);
+  margin-bottom: 50px;
+}
+
+.btn-card {
+  background: rgb(40, 77, 3);
+  color: #fff;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Modal Form Styling */
+
+/* .modal {
+  opacity : 0.8;
+  /* background-image: url("/images/bg.jpg") cover; */
+  /* border: 2px solid red;
+  
+} */ */
+.modal-header{
+  margin:auto;
+  height:50px;
+ 
+  padding-bottom:10px;
+}
+.modal-footer{
+  height: 100px;
+}
+#form {
+  width: 100%;
+}
+.modal-body {
+ 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+
+.modal-content {
+ 
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 650px;
+  height: 725px;
+  /* margin: 150px auto !important; */
+  padding: 5px;
+  background: #f4f4f4;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.col-md-6 {
+  margin-bottom: 15px;
+}
+
+.members-form-control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.members-form-control label {
+  text-align: left;
+  font-size: 14px;
+  color: #777;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+
+
+.members-form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 40px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.members-form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.members-form-control select {
+  border: 2px solid #f0f0f0;
+  color: #777;
+  border-radius: 40px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+
+.members-form-control option {
+  border: 2px solid #f0f0f0;
+  color: #777;
+  border-radius: 40px;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  appearance: none;
+}
+
+
+
+.members-form-control select:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.members-form-control.success input,
+.members-form-control.success select {
+  border-color: #2ecc71;
+}
+
+.col-md-6.error input,
+.col-md-6.error select {
+  border-color: #e74c3c;
+}
+
+.col-md-6.success input,
+.col-md-6.success select {
+  border-color: green;
+}
+
+.members-form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  visibility: hidden;
+}
+
+.col-md-6.error small {
+  visibility: visible;
+}
+
+.modal-footer {
+ 
+  padding-top:20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  height: 50px;
+  
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px 50px;
+  width: 150px;
+  font-size: 14px;
+  padding: 10px 25px;
+
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.4s;
+}
+
+.btn-submit {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.btn-clear {
+  background-color: gray;
+  color: white;
+}
+.btn-member:hover {
+  outline: none;
+  opacity: 0.8;
+}
+@media only screen and (max-width: 480px) {
+  .card-container {
+     flex-direction: column;
+      }
+  .card {
+    margin:auto;
+    width:90%;
+    height:100px;
+    min-height: 150px;
+    font-size: 12px;
+    padding:10px 0px;
+  }
+  .card p{
+    margin-bottom:10px;
+    font-size: 10px;
+  }
+  .card h2{
+    font-size: 12px;
+    padding:0px 0px;
+  }
+  .heading{ display: block;
+ }
+.mentorship-container .heading h3 {
+  /* display:block; */
+  font-size: 10px;
+   height:60px;
+   margin:auto;
+   padding:0px 0px;
+}
+.modal-content{
+  width:80%;
+  height: 80%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    margin:10px auto;
+    width:80%;
+    height:250px;
+    min-height: 150px;
+    font-size: 12px;
+    padding:10px 0px;
+    
+  }
+  .card p{
+    margin-bottom:10px;
+    font-size: 12px;
+  }
+  .card h2{
+    font-size: 15px;
+    padding:0px 0px;
+  }
+  .heading{ display: block;
+ }
+.mentorship-container .heading h3 {
+  /* display:block; */
+  font-size: 18px;
+   height:100px;
+   margin:auto;
+   padding:0px 0px;
+}
+.modal-content{
+  width:100%;
+  height: 100%;
+}
+  .modal-content{
+    margin:auto;
+  }
+
+
+}

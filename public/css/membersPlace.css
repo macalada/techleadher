@@ -1,0 +1,32 @@
+
+.main-content {
+    margin-top: 100px;
+}
+.card-style {
+    /* width        : 22rem; */
+    border-radius: 15px;
+    border       : 2px solid #048A89;
+    display      : flex;
+}
+
+.custom-card-header {
+    border          : 2px solid #048A89;
+    background-color: #AFDEB9;
+    z-index         : 2;
+}
+
+.custom-card-body {
+    background-color          : #FDF4B3;
+    border-bottom-left-radius : 15px;
+    border-bottom-right-radius: 15px;
+    z-index                   : 1;
+}
+
+#invite {
+    color: #47525E;
+}
+
+.normalize-text {
+    color: black;
+    text-decoration: none;
+}

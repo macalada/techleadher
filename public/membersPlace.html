@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechLeadHer</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/membersPlace.css">
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="/css/styles.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div id="navigator"></div>
+
+  <main class="main-content">
+    <section class="page-section section portfolio" id="portfolio">
+
+      <div class="container">
+        <!-- Portfolio Grid Items-->
+        <div class="row">
+          <div class="col-md-4 col-sm-12" style="align-items: center;">
+            <div class="card card-style">
+              <div class="card-header custom-card-header" style="border-radius   : 15px;">
+                <h4 id="invite" style="font-weight: bolder;">Contact other members, build your network!</h4>
+                <br />
+                <div class="col-12">
+                  <select name="function" id="function" onchange="handleChosenFunction(this)" class="form-control">
+                    <option selected>Choose...</option>
+                    <option value="mentor">Mentor</option>
+                    <option value="mentee">Mentee</option>
+                  </select>
+                </div>
+                <br />
+                <div>
+                  <div class="col-12">
+                    <span>INTERESTS: </span>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <input type="checkbox" id="networking" name="networking"
+                        onchange="handleInterests(this.checked, this.name)">
+                      <label for="networking">Networking</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="design" name="design"
+                        onchange="handleInterests(this.checked, this.name)">
+                      <label for="design">Design</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="security" name="security"
+                        onchange="handleInterests(this.checked, this.name)">
+                      <label for="security">Security</label>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div>
+                      <input type="checkbox" id="coding" name="coding"
+                        onchange="handleInterests(this.checked, this.name)">
+                      <label for="coding">Coding</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="development" name="development"
+                        onchange="handleInterests(this.checked, this.name)">
+                      <label for="development">Development</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="cloud" name="cloud"
+                        onchange="handleInterests(this.checked, this.name)">
+                      <label for="cloud">Cloud</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="name">Name: </label>
+                  <input type="text" class="form-control" id="name" oninput="handleName(this.value)">
+                </div>
+              </div>
+              <div class="card-body custom-card-body" id="card-body" style="display: none">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-8">
+
+            <div class="row">
+              <!-- Portfolio Item 1-->
+              <div class="col-md-6 col-lg-6 mb-5">
+                <a type="link" href="https://www.github.com/" target="_blank">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div class="portfolio-item-caption-content text-center text-white">
+                        <!-- <svg
+                                    class="svg-inline--fa fa-plus fa-w-14 fa-3x" aria-hidden="true"
+                                    focusable="false" data-prefix="fas" data-icon="plus" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z">
+                                    </path>
+                                </svg> -->
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/images/sample.png" alt="">
+                    <h6 class="text-center text-padding normalize-text">Mussum Ipsum, cacilds vidis litro
+                      abertis</h6>
+                    <p class="text-justify normalize-text">Mussum Ipsum, cacilds vidis litro abertis. Não
+                      sou faixa preta
+                      cumpadi, sou preto
+                      inteiris, inteiris. Suco de cevadiss deixa as pessoas mais interessantis. Leite de
+                      capivaris, leite de mula manquis sem cabeça. Atirei o pau no gatis, per gatis num
+                      morreus.Atirei o pau no gatis, per gatis num morreus.</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Portfolio Item 2-->
+              <div class="col-md-6 col-lg-6 mb-5">
+                <a type="link" href="https://www.github.com/" target="_blank">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div class="portfolio-item-caption-content text-center text-white">
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/images/sample.png" alt="">
+                    <h6 class="text-center text-padding normalize-text">Mussum Ipsum, cacilds vidis litro
+                      abertis</h6>
+                    <p class="text-justify normalize-text">Local : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Date : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Hour : dosajhosa.</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Portfolio Item 3-->
+              <div class="col-md-6 col-lg-6 mb-5">
+                <a type="link" href="https://www.github.com/" target="_blank">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div class="portfolio-item-caption-content text-center text-white">
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/images/sample.png" alt="">
+                    <h6 class="text-center text-padding normalize-text">Mussum Ipsum, cacilds vidis litro
+                      abertis</h6>
+                    <p class="text-justify normalize-text">Local : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Date : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Hour : dosajhosa.</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Portfolio Item 4-->
+              <div class="col-md-6 col-lg-6 mb-5">
+                <a type="link" href="https://www.github.com/" target="_blank">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div class="portfolio-item-caption-content text-center text-white">
+
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/images/sample.png" alt="">
+                    <h6 class="text-center text-padding normalize-text">Mussum Ipsum, cacilds vidis litro
+                      abertis</h6>
+                    <p class="text-justify normalize-text">Local : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Date : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Hour : dosajhosa.</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Portfolio Item 5-->
+              <div class="col-md-6 col-lg-6 mb-5">
+                <a type="link" href="https://www.github.com/" target="_blank">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div class="portfolio-item-caption-content text-center text-white">
+
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/images/sample.png" alt="">
+                    <h6 class="text-center text-padding normalize-text">Mussum Ipsum, cacilds vidis litro
+                      abertis</h6>
+                    <p class="text-justify normalize-text">Local : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Date : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Hour : dosajhosa.</p>
+                  </div>
+                </a>
+              </div>
+              <!-- Portfolio Item 6-->
+              <div class="col-md-6 col-lg-6 mb-5">
+                <a type="link" href="https://www.github.com/" target="_blank">
+                  <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                      <div class="portfolio-item-caption-content text-center text-white">
+
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="/images/sample.png" alt="">
+                    <h6 class="text-center text-padding normalize-text">Mussum Ipsum, cacilds vidis litro
+                      abertis</h6>
+                    <p class="text-justify normalize-text">Local : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Date : dosajhosa.</p>
+                    <p class="text-justify normalize-text">Hour : dosajhosa.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+
+    <footer id="footer"></footer>
+    <!-- Import Layout-->
+    <script src="/js/import_layout.js"></script>
+</body>
+<script src="/js/membersPlace.js"></script>
+
+</html>
